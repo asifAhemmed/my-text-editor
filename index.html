@@ -12,34 +12,37 @@
   </head>
   <body>
     <div
-      class="container bg-blue-300 w-9/12 mx-auto mt-12 rouned-lg text-center px-24 py-10"
+      class="container bg-blue-300 w-9/12 mx-auto mt-12 rouned-lg text-center px-12 py-10"
     >
       <h1 class="mb-6 text-3xl font-bold">My Text Editor</h1>
       <div class="px-8 bg-blue-100 py-6 border-2 border-black">
         <div
-          class="grid grid-cols-3 gap-6 px-8 bg-blue-100 py-8 border-b-2 border-black"
+          class="grid grid-cols-3 gap-6 px-4 bg-blue-100 py-8 border-b-2 border-black"
         >
           <div class="flex gap-3">
-            <i class="fa-solid fa-bold"></i>
-            <i class="fa-solid fa-italic"></i>
-            <i class="fa-solid fa-underline"></i>
+            <i class="fa-solid fa-bold hover:bg-blue-500 p-4 rouned-lg" id="bold"></i>
+            <i class="fa-solid fa-italic hover:bg-blue-500 p-4 rouned-lg" id="italic"></i>
+            <i class="fa-solid fa-underline hover:bg-blue-500 p-4 rouned-l" id="underline"></i>
           </div>
           <div class="flex gap-6">
-            <i class="fa-solid fa-align-left"></i>
-            <i class="fa-solid fa-align-center"></i>
-            <i class="fa-solid fa-align-center"></i>
-            <i class="fa-solid fa-align-justify"></i>
+            <i class="fa-solid fa-align-left hover:bg-blue-500 p-4 rouned-lg" id="left"></i>
+            <i class="fa-solid fa-align-center hover:bg-blue-500 p-4 rouned-lg" id="center"></i>
+            <i class="fa-solid fa-align-right hover:bg-blue-500 p-4 rouned-lg" id="right"></i>
+            <i class="fa-solid fa-align-justify hover:bg-blue-500 p-4 rouned-lg" id="justify"></i>
           </div>
           <div class="flex gap-6">
             <div class="flex gap-4">
-              <input type="number" name="" id="" />
-              <p class="font-medium">aA</p>
+              <input type="number" name="" id="number-field" />
+              <p class="font-medium hover:bg-blue-500 p-4 rouned-lg">aA</p>
             </div>
-            <input type="color" name="" id="" />
+            <input type="color" name="" id="color-field" class="hover:bg-blue-500" />
           </div>
         </div>
-        <textarea name="" id="" cols="60" rows="10" class="w-full mt-6 border-2 border-black "></textarea>
+        <textarea name="" id="text-area" cols="60" rows="10" class="w-full mt-6 border-2 border-black "></textarea>
       </div>
     </div>
+
+    <script src="js/utilities.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>
